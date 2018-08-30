@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.appodeal.support.test.mvp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:animateLayoutChanges="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/native_is_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/current_time_after_start"
+            style="@style/TextViewMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_after_start" />
+
+        <TextView
+            android:id="@+id/current_time_after_start_value"
+            style="@style/TextViewMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="0" />
+
+        <Button
+            android:id="@+id/test_btn"
+            style="@style/BtnStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/show_list_view" />
+
+        <TextView
+            android:id="@+id/countdown"
+            style="@style/TextViewMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_to_interstitial_showing" />
+
+        <TextView
+            android:id="@+id/countdown_value"
+            style="@style/TextViewMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="30" />
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

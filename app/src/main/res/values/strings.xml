@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyApp</string>
+    <string name="nativeAdMessage">native text</string>
+    <string name="time_after_start">Time after start:</string>
+    <string name="time_to_interstitial_showing">Time to interstitial showing:</string>
+    <string name="show_list_view">Show List View</string>
+    <string name="check_connection">Check your internet connection</string>
+</resources>
